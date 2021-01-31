@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="lapok.css">
+  <title>Hálózatok II.</title>
+</head>
+<body>
+    <h1>Hálózatok II.</h1>
+
+    <article>
+        <h3>Dinamikus forgalomirányítási ismeretek</h3>
+        <p>A témakör célja, hogy a tanulók megismerjék a dinamikus belső forgalomirányítás lehetőségeit, a forgalomirányító protokollok működését, és megértsék a forgalomirányító protokollok közt lévő különbségeket. Képesek legyenek a hálózat méreteinek megfelelő forgalomirányítás megtervezésére, a protokoll kiválasztására, konfigurálására, hibaelhárítására.</p>
+        <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+        <ul>
+          <li>Látja a statikus és dinamikus forgalomirányítás közti különbséget, mindkét esetben tisztában van az előnyökkel és a hátrányokkal.</li>
+          <li>Tisztában van a dinamikus belső forgalomirányító protokollok működési elvével. Képes a dinamikus forgalomirányító protokollok csoportosítására osztályosság (osztály nélküli, osztályalapú), a felhasználás helye (külső, belső), működési mód (távolságvektor-alapú, kapcsolatállapot-alapú) szerint.</li>
+          <li>Ismer legalább egy távolságvektor-alapú dinamikus forgalomirányító protokollt (pl. RIP, RIPv2, EIGRP), és tisztában van a működésével. Képes az általa ismert távolságvektor-alapú forgalomirányító protokoll konfigurálására, működésének ellenőrzésére, hibaelhárítására.</li>
+          <li>Tisztában van a távolságvektor-alapú és a kapcsolatállapot-alapú forgalomirányító protokollok közti különbségekkel. Ismeri a kapcsolatállapot-alapú forgalomirányító protokollok működési elvét.</li>
+          <li>Ismeri az OSPFv2 és OSPFv3 forgalomirányító protokollok működését, a forgalomirányítók közötti szomszédság kialakulásának feltételeit és folyamatát.</li>
+          <li>Ismeri az OSPF által használt üzenettípusokat (Hello, DBD, LSR, LSU, LSAck) és azok szerepét.</li>
+          <li>Tisztában van a hello és a halott időzítők szerepével, és képes azok értékét megváltoztatni.</li>
+          <li>Ismeri az OSPF-hálózattípusokat (pont-pont, szórásos többes hozzáférés, nem szórásos többes hozzáférés, pont-többpont, virtuális összeköttetés), és tisztában van a többes hozzáférésű hálózatok kihívásaival (többszörös hozzáférési viszonyok, túlzott LSA-elárasztás).</li>
+          <li>Tisztában van a router ID, a DR és a BDR fogalmával és szükségességével a többes hozzáférésű hálózatokban.</li>
+          <li>Ismeri a router ID megválasztásának folyamatát, és képes a router ID értékét beállítani, illetve ennek hiányában meghatározni.</li>
+          <li>Ismeri a DR/BDR-választás folyamatát, és képes azt befolyásolni interfészprioritás, illetve router ID módosításával.</li>
+          <li>Ismeri a passzív interfészek szerepét, és képes megállapítani, hogy egy forgalomirányító mely interfészét kell passzívként konfigurálni. Képes OSPFv2 és OSPFv3 esetén passzív interfész beállítására.</li>
+          <li>Képes alapértelmezett útvonal továbbhirdetésére egyterületű OSPFv2 és OSPFv3 esetén.</li>
+          <li>Képes egyterületű OSPFv2 és OSPFv3 konfigurálására, illetve már meglévő OSPFv2- és OSPFv3-terület kiegészítésére.</li>
+          <li>Képes hibaelhárítást végezni egyterületű OSPFv2 és OSPFv3 esetén, ismeri a hibaelhárítás során használatos legfontosabb parancsokat.</li>
+          <li>Tisztában van az OSPF-területek jelentőségével, a többterületű OSPFv2 és OSPFv3 működésével.</li>
+          <li>Képes többterületű OSPFv2 és OSPFv3 konfigurálására, illetve már meglévő konfiguráció kiegészítésére, módosítására.</li>
+          <li>Képes alapértelmezett útvonalat behirdetni többterületű OSPFv2 és OSPFv3 hálózatokba.</li>
+          <li>Képes többterületű OSPFv2 és OSPFv3 működésének ellenőrzésére, hibaelhárítására.</li>
+        </ul>
+    </article>
+
+    <article>
+      <h3>Hálózatbiztonság</h3>
+      <p>A témakör célja, hogy a tanulók megértsék hálózatbiztonság fontosságát. Tisztában legyenek a támadási technikákkal, és képesek legyenek ezek lehetőség szerinti megelőzésére, kivédésére. A tanulók ismerjék meg a központi hitelesítés szerepét, használatának lehetőségeit, és legyenek képesek RADIUS-hitelesítés megvalósítására. A tanulók ismerjék meg a kriptográfia alapjait.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van napjaink hálózati fenyegetéseivel, a CyberSecurity jelenlegi állapotával.</li>
+        <li>Ismeri a fenyegetés, sebezhetőség és kockázat fogalmát, a kockázatkezelés módszereit.</li>
+        <li>Tisztában van a hacker fogalmával, fajtáival, lehetséges indítékaival.</li>
+        <li>Ismeri az etikus hacker fogalmát és az etikus hacker által használt eszközöket (pl. jelszófeltörő programok, hálózatmonitorozó programok, csomagelfogó programok stb.)</li>
+        <li>Ismeri a malware fogalmát, fajtáit (vírus, féreg, trójai, spyware, adware, scareware, phishing, rootkits, ransomware). Érti az egyes fajták közti különbségeket.</li>
+        <li>Ismeri a hálózati támadások fontosabb típusait (felderítés, jogosultságmegszerzés, social engineering, szolgáltatásmegtagadás).</li>
+        <li>Ismeri az IP-, ICMP-, TCP-, UDP-, ARP-, DNS- és DHCP-protkollok sebezhetőségeit.</li>
+        <li>Ismeri a webes és levelezési szolgáltatások sebezhetőségeit.</li>
+        <li>Ismeri az adatbázisok elleni támadások lehetőségeit (pl. SQL-injection).</li>
+        <li>Képes egy kapcsolón a porttükrözés beállítására (SPAN), a hálózati forgalom megfigyelése céljából.</li>
+        <li>Tisztában van a hálózatbiztonsági házirend fontosságával. Tisztában van az egyes támadástípusok esetén használható megelőzési és hatástalanítási technikákkal.</li>
+        <li>Ismeri a forgalomirányító védelmének három területét (fizikai biztonság, az operációs rendszer biztonsága, router hardening).</li>
+        <li>Ismeri a forgalomirányítón létrehozható felhasználói szinteket, érti ezek működését, és képes forgalomirányítón különböző szintű felhasználókat létrehozni, hozzájuk jogosultságokat rendelni.</li>
+        <li>Tisztában van a role-based CLI-hozzáféréssel, a root view, a CLI-view és a superview fogalmával, működésével. Képes forgalomirányítón superview, root view és CLI-view létrehozására, működésének ellenőrzésére.</li>
+        <li>Tisztában van a szállítási réteg sebezhetőségével, ismeri a TCP- és UDP-protokoll elleni támadásokat.</li>
+        <li>Ismeri az AAA fogalmát, összetevőit.</li>
+        <li>Tisztában van a külső központi szerveren történő hitelesítés és hozzáférés-kezelés jelentőségével, fontosságával.</li>
+        <li>Tisztában van a RADIUS-protokoll működésével, szerepével.</li>
+        <li>Képes forgalomirányítón AAA megvalósítására, használatára. Képes forgalomirányító távoli eléréséhez RADIUS-hitelesítést használni.</li>
+        <li>Képes vezeték nélküli hálózatban RADIUS-hitelesítés konfigurálására, használatára.</li>
+        <li>Tisztában van a hitelesítés, sértetlenség és megbízhatóság (authentication, integrity, confidentiality) jelentésével, érti a köztük lévő különbségeket.</li>
+        <li>Érti a kriptográfia jelentőségét, ismer egyszerűbb titkosítási algoritmusokat (Vigenere-kódolás, Ceasar-kódolás).</li>
+        <li>Tisztában van a titkos kulcs és a nyilvános kulcs fogalmával.</li>
+        <li>Tisztában van a szimmetrikus kulcsú és az aszimmetrikus kulcsú titkosítás működési elvével. Ismer szimmetrikus kulcsú és aszimmetrikus kulcsú titkosítási eljárásokat (DES, AES, RSA).</li>
+        <li>Tisztában van a hash algoritmusok feladatával, ismeri a leginkább használt hashképző algoritmusokat (MD5, SHA).</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Hozzáférési listák használata</h3>
+      <p>A témakör célja, hogy a tanulók megértsék a forgalomszűrés jelentőségét, és legyenek képesek forgalomszűrést megvalósítani IPv4-környezetben.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a forgalomszűrés szükségességével, és meg is tudja azt valósítani hozzáférési listák alkalmazásával.</li>
+        <li>Érti a hozzáférési listák használatának célját és működését.</li>
+        <li>Tisztában van a helyettesítő maszk szerepével a hozzáférési listák vonatkozásában, és képes a helyes helyettesítő maszk meghatározására.</li>
+        <li>Ismeri a normál hozzáférési lista nyújtotta forgalomszűrési lehetőségeket.</li>
+        <li>Képes meghatározni a normál hozzáférési lista alkalmazásának legmegfelelőbb helyét.</li>
+        <li>Képes számozott és nevesített normál hozzáférési listát készíteni IPv4-környezetben.</li>
+        <li>Képes nevesített normál hozzáférési lista szerkesztésére, módosítására.</li>
+        <li>Képes ellenőrizni a normál hozzáférési lista működését, az átengedett és eldobott csomagok számát.</li>
+        <li>Képes normál hozzáférési listákon hibakeresést és hibaelhárítást végezni.</li>
+        <li>Ismeri a kiterjesztett hozzáférési lista nyújtotta forgalomszűrési lehetőségeket.</li>
+        <li>Képes meghatározni a kiterjesztett hozzáférési lista alkalmazásának legmegfelelőbb helyét.</li>
+        <li>Képes számozott és nevesített kiterjesztett hozzáférési listát készíteni IPv4 környezetben.</li>
+        <li>Képes nevesített kiterjesztett hozzáférési lista szerkesztésére, módosítására.</li>
+        <li>Képes ellenőrizni a kiterjesztett hozzáférési lista működését, az átengedett és eldobott csomagok számát.</li>
+        <li>Képes kiterjesztett hozzáférési listákon hibakeresést és hibaelhárítást végezni.</li>
+        <li>Tisztában van a távoli elérést biztosító VTY-vonalak védelmének jelentőségével.</li>
+        <li>Képes normál és kiterjesztett hozzáférési lista segítségével a VTY-vonalak védelmére.</li>
+        <li>Képes a VTY-vonalakra alkalmazott normál, illetve kiterjesztett hozzáférési lista működésének ellenőrzésére és hibaelhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Statikus és dinamikus címfordítás lehetőségei</h3>
+      <p>A témakör célja, hogy a tanulók megértsék a címfordítás szükségességét, típusait, és legyenek képesek statikus és dinamikus címfordítás megvalósítására.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van az IPv4-címfordítás (NAT) szükségességével. Ismeri a címfordítás előnyeit és hátrányait.</li>
+        <li>Ismeri a címfordítás nyújtotta lehetőségeket, és ismeri a címfordítás fajtáit (statikus címfordítás, dinamikus címfordítás, portcímfordítás, porttovábbítás).</li>
+        <li>Tisztában van a címfordítás fajtái közötti különbségekkel.</li>
+        <li>Tisztában van a címfordításhoz kapcsolódó címek négy típusával (belső helyi cím, belső globális cím, külső helyi cím, külső globális cím).</li>
+        <li>Képes a megfelelő címfordítási típus kiválasztására.</li>
+        <li>Képes a belső és külső hálózat határának megállapítására.</li>
+        <li>Képes annak megállapítására, hogy melyik eszközön szükséges címfordítás kialakítása.</li>
+        <li>Képes statikus címfordítás konfigurálására, ellenőrzésére és hibaelhárítására.</li>
+        <li>Képes dinamikus címfordítás konfigurálására, ellenőrzésére és hibaelhárítására.</li>
+        <li>Képes túlterheléses dinamikus címfordítás vagy portcímfordítás (PAT) konfigurálására, ellenőrzésére és hibaelhárítására.</li>
+        <li>Képes port továbbítás konfigurálására, ellenőrzésére és hibaelhárítására.</li>
+        <li>Képes a címfordítási tábla (NAT-tábla) megjelenítésére, ellenőrzésére, kiürítésére. Érti a NAT-táblában szereplő bejegyzéseket.</li>
+        <li>Szimulációs szoftver segítségével végig tudja kísérni egy címfordítást használó adatcsomag harmadik rétegbeli fejlécének változását.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>WAN-technológiák</h3>
+      <p>A témakör célja, hogy a tanulók ismerjék a WAN-hálózatokra fókuszálva a technológiák, a hálózatokban szükséges eszközök és alkalmazások telepítésének, üzemeltetésének elméleti alapjait és gyakorlati megvalósításait. A tanulók ismerjék meg a WAN-ok esetén használt második rétegbeli protokollokat, és ismerjék meg a WAN-okban használt forgalomirányítás alapjait és gyakorlati megvalósítását.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a WAN- és az OSI-modell kapcsolatával. Érti a WAN fogalmát, használatának célját.</li>
+        <li>Ismeri a WAN-összetevőket és -eszközöket.</li>
+        <li>Érti a WAN működését, üzemeltetését.</li>
+        <li>Képes megállapítani a LAN és a WAN határát.</li>
+        <li>Ismeri a publikus és privát WAN-technológiákat, képes azok összehasonlítására és adott szempontok szerint a legmegfelelőbb technológia kiválasztására.</li>
+        <li>Tisztában van a soros pont-pont kapcsolat kommunikációs szabványaival.</li>
+        <li>Ismeri a PPP-protokoll működését, lehetőségeit.</li>
+        <li>Adatforgalom elfogására alkalmas szoftverrel képes PPP-keret elfogására, és ismeri a keret fejlécének részéit.</li>
+        <li>Képes forgalomirányítók között PPP-kapcsolat kialakítására, ellenőrzésére, hibaelhárítására.</li>
+        <li>Képes PPP-kapcsolaton hitelesítés (PAP, CHAP) használatára. Érti a hitelesítési módok működését, és tisztában van a két hitelesítési mód közötti különbségekkel.</li>
+        <li>Képes PPP-kapcsolaton konfigurált hitelesítés működésének ellenőrzésére, hibaelhárítására.</li>
+        <li>Tisztában van az eBGP forgalomirányító protokoll szerepével, fontosabb tulajdonságaival, működésével.</li>
+        <li>Képes az eBGP-protokoll alapszintű konfigurálására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Virtuális magánhálózat (VPN) kialakítása</h3>
+      <p>A témakör célja, hogy a tanulók megismerjék a virtuális magánhálózat (VPN) működését, használatának előnyeit és fajtáit. A tanulók legyenek képesek Site-to-site és Remote-access VPN konfigurálására.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a virtuális magánhálózat szükségességével, szerepével, alapvető funkcióival.</li>
+        <li>Érti a virtuális magánhálózat nyújtotta lehetőségeket, előnyeit és hátrányait.</li>
+        <li>Ismeri a legelterjedtebb VPN-technológiákat (Remote-Access VPN, Site-to-Site VPN).</li>
+        <li>Ismeri az IPSec-technológiát, érti az IPSec-keretrendszer működését, összetevőit.</li>
+        <li>Tisztában van a Remote-Access VPN nyújtotta lehetőségekkel, alkalmazási területeivel.</li>
+        <li>Ismeri a Remote-Access VPN összetevőit.</li>
+        <li>Képes Remote-Access VPN-konfigurálásra forgalomirányítón.</li>
+        <li>Képes Remote-Access VPN-kapcsolat kialakítására végberendezésen.</li>
+        <li>Ismeri a Remote-Access VPN-kapcsolat ellenőrzéséhez ajánlott parancsokat, és képes azok megfelelő használatával a Remote-Access VPN-kapcsolat működésének ellenőrzésére.</li>
+        <li>Tisztában van a Site-to-Site VPN nyújtotta lehetőségekkel, alkalmazási területeivel.</li>
+        <li>Ismeri a Site-to-Site VPN összetevőit.</li>
+        <li>Képes Site-to-Site VPN-konfigurálásra forgalomirányítón.</li>
+        <li>Képes Site-to-Site VPN-kapcsolat kialakítására forgalomirányítók között.</li>
+        <li>Ismeri a Site-to-Site VPN-kapcsolat ellenőrzéséhez ajánlott parancsokat, és képes azok megfelelő használatával a Site-to-Site VPN-kapcsolat működésének ellenőrzésére.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Minőségbiztosítási alapok, hálózatfelügyelet megvalósítása</h3>
+      <p>A témakör célja, hogy a tanulók alapszintű ismereteket szerezzenek a minőségbiztosítás területén, elsajátítsák a hálózatmonitorozás és a hálózatfelügyelet elméleti alapjait és gyakorlati megvalósításait.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Érti, hogy a hálózati forgalom milyen hatással van az átvitel minőségére.</li>
+        <li>Képes meghatározni a különböző típusú forgalom (hang, adat, videó) számára szükséges minimális hálózati követelményeket.</li>
+        <li>Ismeri a hálózati eszközök által használt, sorba rendező algoritmusokat.</li>
+        <li>Ismeri a különböző szolgáltatásminőségi (QoS) modelleket.</li>
+        <li>Tisztában van azzal, hogy a QoS által használt mechanizmusok hogyan biztosítják az átvitel megfelelő minőségét.</li>
+        <li>Képes alapszintű QoS konfigurálására forgalomirányítón.</li>
+        <li>Ismer legalább egy második rétegbeli protokollt, mely képes a szomszédos eszközök felfedezésére (CDP, LLDP).</li>
+        <li>Tisztában van a hálózatfelderítő protokollok működésével, használatuk előnyeivel, hátrányaival.</li>
+        <li>Képes az általa ismert hálózatfelderítő protokoll konfigurálására és használatára.</li>
+        <li>Képes az általa ismert hálózatfelderítő protokoll használatával a hálózat feltérképezésére.</li>
+        <li>Ismeri a Network Time Protocol (NTP) működését, szerepét. Tisztában van az NTP használatának szükségességével.</li>
+        <li>Képes forgalomirányítót NTP-szerverként és NTP-kliensként konfigurálni.</li>
+        <li>Képes két eszköz között NTP-kliens és NTP-szerver-kapcsolatot kialakítani.</li>
+        <li>Képes hitelesítést alkalmazni az NTP-protokoll használata során.</li>
+        <li>Képes megjeleníteni az NTP működésének állapotát forgalomirányítón.</li>
+        <li>Képes NTP esetén hibaelhárítást végezni.</li>
+        <li>Ismeri a Simple Network Management Protocol (SNMP) működését, szerepét, használatának lehetőségeit.</li>
+        <li>Tisztában van az SNMP esetén előforduló fogalmak jelentésével (SNMP manager, SNMP agent, MIB, trap).</li>
+        <li>Ismeri az SNMP-verziókat, tisztában van a köztük lévő főbb különbségekkel.</li>
+        <li>Képes forgalomirányítón SNMP alapszintű konfigurálására. Képes az SNMP használatára, segítségével konfigurációs adatok lekérdezésére, módosítására.</li>
+        <li>Ismeri a Syslog-protokoll működését, szerepét. Tisztában van a Syslog-protokoll által használt üzenetformátummal. Ismeri a súlyossági szinteket, és tudja azok jelentését.</li>
+        <li>Képes forgalomirányítón Syslog konfigurálására. Képes Syslog-szerverként funkcionáló eszközön nyomon követni a forgalomirányító által küldött naplóüzeneteket. Képes ezekben az üzenetekben szűrést, keresést, rendezést végrehajtani.</li>
+        <li>Ismeri a NetFlow-protokoll működését, szerepét, verzióit. Tisztában van a NetFlow által használt adatfolyam jelentésével.</li>
+        <li>Képes forgalomirányítón NetFlow konfigurálására, ellenőrzésére, forgalmi statisztika megjelenítésére.</li>
+        <li>Ismeri a kapcsolók és forgalomirányítók által használt konfigurációk fajtáit (kezdeti konfiguráció, futó konfiguráció). Tisztában van ezek szerepével, tárolási helyével.</li>
+        <li>Ismeri a TFTP-protokoll működését, képes annak használatára.</li>
+        <li>Képes forgalomirányító és kapcsoló futó, illetve kezdeti konfigurációjának mentésére, külső szerverre történő mentésére TFTP-protokoll használatával.</li>
+        <li>Képes forgalomirányító és kapcsoló futó, illetve kezdeti konfigurációjának helyreállítására, visszaállítására TFTP-protokoll használatával.</li>
+        <li>Ismeri az IOS fogalmát, szerepét, tárolási helyét, működés közbeni tárolási helyét.</li>
+        <li>Tisztában van a különböző IOS-verziókkal, és ismeri az aktuális IOS-verzió jellemzőit, sajátosságait.</li>
+        <li>Képes forgalomirányítón és kapcsolón IOS-frissítés végrehajtására.</li>
+        <li>Ismeri a jelszóhelyreállítás lépéseit forgalomirányítón és kapcsolón.</li>
+        <li>Képes jelszóhelyreállítást végezni forgalomirányítón és kapcsolón.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Hálózattervezés, hibaelhárítás</h3>
+      <p>A témakör célja, hogy a tanulók elsajátítsák a hálózattervezés és a hálózati hibaelhárítás elméleti alapjait és gyakorlati megvalósításait.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a konvergált hálózat fogalmával, jelentőségével.</li>
+        <li>Ismeri a háromrétegű hierarchikus hálózati modellt (hozzáférési réteg, elosztási réteg, központi réteg), és tisztában van az egyes rétegek feladatával, ajánlott eszközeivel.</li>
+        <li>A háromrétegű modell használatával képes kis- és közepes méretű kapcsolt hálózat tervezésére.</li>
+        <li>Tisztában van a kapcsoló hardverjellemzőivel, a kapcsolók fajtáival (moduláris, fix kiépítésű, stackelhető), és képes a hálózat követelményeit figyelembe véve a megfelelő kapcsoló kiválasztására.</li>
+        <li>Tisztában van a forgalomirányító hardverjellemzőivel, és képes a hálózat követelményeit figyelembe véve a megfelelő kapcsoló kiválasztására.</li>
+        <li>Tisztában van a hálózati dokumentáció tartalmával, jelentőségével. Képes hálózati dokumentáció készítésére. Tudja, hogyan érdemes a hálózati dokumentációt felhasználni a hibakeresés során.</li>
+        <li>Tisztában van a hibaelhárítás folyamatával.</li>
+        <li>Ismeri az OSI-modell rétegein alapuló hibafelderítési eljárásokat (fentről lefelé, lentről felfelé, oszd-meg-és-uralkodj), és képes ezek alapján hibafelderítést végezni.</li>
+        <li>Ismeri a hibafelderítéshez használható hardveres és szoftveres eszközöket, és képes ezek használatára.</li>
+        <li>Képes a hálózati hibák tüneteinek, következményeinek és a hiba által érintett területnek a meghatározására.</li>
+        <li>Képes a hálózati hibák megfelelő dokumentálására.</li>
+        <li>Tisztában van a viszonyítási alap jelentőségével, tudja, hogyan és mikor érdemes viszonyítási alapot készíteni.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Hálózatvirtualizáció, hálózatautomatizáció</h3>
+      <p>A témakör célja, hogy a tanulók megismerjék a hálózatvirtualizáció és -automatizáció alapjait, előnyeit.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a cloud computing és a virtualizáció fontosságával, jelentőségével.</li>
+        <li>Ismeri a hálózati eszközök és a hálózat virtualizálásának lehetőségeit.</li>
+        <li>Ismeri a szoftveralapú hálózati megoldásokat.</li>
+        <li>Ismeri a hálózatautomatizáció alapjait.</li>
+        <li>Ismeri a használható adatformátumokat (JSON, YAML, XML), és képes ezek öszszehasonlítására.</li>
+        <li>Tisztában van az API- és a REST-szoftverarchitektúra működésével.</li>
+        <li>Ismeri a különböző konfigurációs menedzsmenteszközöket (Puppet, Chef, Ansible, SaltStack).</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Komplex hálózat tervezése, kialakítása</h3>
+      <p>A témakör tanításának célja, hogy a tanulók képesek legyenek egy nagyobb és összetettebb hálózatot tervezni, megvalósítani és konfigurálni úgy, hogy a hálózatban egy eszköz vagy kapcsolat meghibásodása a legkisebb kiesést okozza. A tanulók eddigi ismereteik alapján végezzék el egy komplex hálózat tervezését, dokumentálását, majd szimulációs szoftverben a hálózat működésének tesztelését. A tanulók végül fizikai eszközök használatával valósítsák meg a tervezett hálózatot. A témakör tanítása során csoportos projektmunka javasolt.</p>
+    </article>
+</body>
+</html>

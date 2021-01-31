@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="lapok.css">
+  <title>Informatikai és távközlési alapok 1</title>
+</head>
+<body>
+    <h1>Informatikai és távközlési alapok 1</h1>
+
+    <article>
+      <h3>Bevezetés az elektronikába</h3>
+      <p>A tantárgy oktatásának alapvető célja azoknak az ismereteknek a megalapozása, gyakorlatba ültetése, amelyek képessé teszik a tanulót arra, hogy megértse a szakmájában előforduló elektronikai alkatrészek alkalmazásának célját és működési elvét. A tanuló a tantárgy tanulása során biztos alapokat szerez alapvető elektronikai kapcsolások értelmezéséhez, valamint adott probléma és a megoldásához vezető út felismeréséhez. A téma feldolgozása során a tanulók megismerik a környezeti jellemzők számítógépes megfigyelésének lehetőségeit, az adott jelenséghez megfelelő érzékelők kiválasztásának szempontjait. Jártasságot szereznek a számítógépes mérésekben, valamint megismerkednek a virtuális műszerek felépítésével és alkalmazásával. A foglalkozássorozat vége felé megjelenő, közvetlenül kipróbálható kísérletek az adatátviteli technikák megismerését készítik elő, amikről a tanulók a későbbiekben tanulnak majd. Ebben a tanulási egységben nem az a cél, hogy a diákok megismerjék az alkalmazott elektronikai alkatrészek működésének fizikai alapjait, hanem hogy megtapasztalják, léteznek bizonyos elektronikai építőelemek, amelyek segítségével a környezet paraméterei mérhetők, vagy amelyek befolyásolni tudják a környezet jellemzőit. Az elsődleges cél az alkotás, a megtapasztalás, a vizsgálódás. A mért adatok értelmezési, kiértékelési képességének kialakulása, a következtetések levonása megalapozza további szakmai tanulmányaikat. A tantárgy oktatásának fontos feladata az is, hogy fejlessze a tanulók problémamegoldó készségét, kialakítsa bennük az új ismeretek megszerzése iránti igényt és az azok elsajátításához szükséges készségeket. Minden témakört – még az alapismereteket is – célszerű méréssel szemléltetni, hogy a tanulók átlássák a feldolgozandó téma gyakorlati jelentőségét és kapcsolatát a választott szakmával.</p>
+      <p>A tanulók megismerkednek alap áramköri elemekkel (ellenállás, kondenzátor, tranzisztor, LED stb.) ezekből előre elkészített (próba) panelen egyszerűbb áramköröket építenek forrasztásos technológiával. Ezen áramkörökön végeznek méréseket bizonyítva az elektronika alaptörvényeit.</p>
+      <p>A tananyag kifejtése során jól alkalmazhatók a National Instruments iskolák számára elérhető hardver-, illetve szoftvereszközei, a tematika is ezekhez igazodik. A feldolgozási egységek azonban csak minták, szabadon átültethetők Raspberry Pi, Arduino környezetre és az ezekhez kapható készletekre. A mintaként kidolgozott tematika segíti a tanulókat, hogy iparban is alkalmazott megoldásokat ismerhessenek meg.</p>
+      <p>A mintatematika szerint haladva minden foglalkozás esetében szükséges eszközök az osztálytermi LabVIEW-fejlesztő és -futtató környezet, diákonként egy myDAQ hardver és szenzorkészlet, csavarhúzó, multiméter. A foglalkozási egységek hozzájárulnak a munkaerőpiacon elvárt készségek kialakulásához, a szakmai szókincs, valamint a csapatmunkára való képesség fejlődéséhez.</p>
+      <p>A tanulók megismerkednek a jelek, jelhordozók szerepével, a jelek megjelenési formáival, a jelkondicionálás szükségességével. Megismerik a villamos feszültség fogalmát és feldolgozását, a nem villamos jelek elektronikus feldolgozhatóságát, a jelátalakítók szerepét. Megtanulnak információs egységet létrehozni és vezetékes formában továbbítani. Megismerik a vezeték nélküli jelátvitel lehetőségét, a vivőfrekvencia szerepét. Az adatmegjelenítők alkalmazásával megtanulják értelmezni a beolvasott jelek alakját, a változások jellemzőit, és következtetéseket tudnak levonni a környezeti jellemzők változásait követő jelalakok alapján.</p>
+      <p>A témakörhöz az alábbi eszközök használata javasolt: felszerelt és internet-hozzáféréssel rendelkező számítógéplabor (aktív tábla, számítógép, projektor), amelyben rendelkezésre állnak a témakör tanításához szükséges szoftverek (LabVIEW), valamint a vonatkozó hardverelemek (myDAQ, szenzorkészlet, csavarhúzó, multiméter). Arduino valamint RaspberryPI esetén az eszköz honlapján megtalálható, szabadon letölthető fejlesztői környezetek, valamint az eszközhöz kapható kit szerelési egységcsomagok.</p>
+      <p>A témakörben az alábbi ismeretek és gyakorlati készségek elsajátítására kerül sor:</p>
+      <p>Egyszerűbb áramkör építése:</p>
+      <ul>
+        <li>Forrasztóállomás megismerése, a forrasztás eszközei</li>
+        <li>Egyszerűbb áramkör építése próbapanelen</li>
+        <li>Paraméterek mérése multiméterrel</li>
+      </ul>
+      <p>Bevezetés a LabVIEW grafikus programozásba:</p>
+      <ul>
+        <li>A hőmérő szenzor bemutatása, a számítógépes mérés elvégzése, a mérőszoftver elemeinek értelmezése, a jelváltozások megfigyelése</li>
+        <li>A méréshez szükséges hardverelemek és azok feladatának megismerése</li>
+        <li>A javasolt elektronikus tananyagtartalmaknál felsorolt webcastok megtekintése (Bevezetés a myDAQ használatába)</li>
+      </ul>
+      <p>A LabVIEW környezet megismerése:</p>
+      <ul>
+        <li>A VI felépítése</li>
+        <li>Adattípusok, adatvezetékek</li>
+        <li>Matematikai műveletek</li>
+        <li>Control, Indicator szerepe</li>
+        <li>„Hello World!” típusú program készítése, futtatása (két szám összegének meghatározása, téglalap kerületének, területének kiszámítása)</li>
+        <li>Egyszeres lefutás összevetése az iparban alkalmazott LOOP-megvalósítással</li>
+        <li>VI indítása, STOP funkció</li>
+      </ul>
+      <p>A grafikus programfejlesztés építőelemei:</p>
+      <ul>
+        <li>Algebrai műveletek</li>
+        <li>Relációk</li>
+        <li>Logikai műveletek</li>
+        <li>Különféle LOOP-ok</li>
+        <li>Elágazások, a SELECT-, illetve a CASE-szerkezetek</li>
+        <li>Numeric Control, Boolean Indicator</li>
+        <li>Waveform Chart, Waveform Graph</li>
+      </ul>
+      <p>Mérés a myDAQ használatával:</p>
+      <ul>
+        <li>Hőfokfüggő ellenállás alkalmazása</li>
+        <li>Fotoellenállás alkalmazása</li>
+        <li>Audiobemenet alkalmazása</li>
+        <li>Analóg-, illetve digitális jelek a műszaki gyakorlatban</li>
+        <li>Időzítési lehetőségek</li>
+      </ul>
+      <p>Jelkondicionálás:</p>
+      <ul>
+        <li>Filter</li>
+        <li>Express VI-ok</li>
+        <li>Pulzusmérő létrehozása</li>
+      </ul>
+      <p>Virtuális mérőműszerek működtetése:</p>
+      <ul>
+        <li>Audio input, audio output használata</li>
+        <li>Gyorsulásmérő alkalmazása</li>
+        <li>Mintavételi frekvencia megváltoztatása</li>
+        <li>A myDAQ alkalmazása multiméterként</li>
+        <li>Prezentáció</li>
+      </ul>
+      <p>Projektfeladatok:</p>
+      <p>Javasolt, hogy a tanulók párban, esetleg három fős csoportokban dolgozzanak, és a csapatok más-más projektfeladatot kapjanak.</p>
+      <p>Lehetséges projekttémák:</p>
+      <ul>
+        <li>Hőmérséklet-szabályzás (hőmérő, valamint ventilátor alkalmazása)</li>
+        <li>Termodinamikai egyensúly megfigyelése</li>
+        <li>Erőmérés (rezisztív szenzor a szenzorcsomagban)</li>
+        <li>Súrlódási együttható meghatározása lejtő segítségével</li>
+        <li>Gépek rezgése (gyorsulásmérő alkalmazásával)</li>
+        <li>Alkonykapcsoló</li>
+        <li>Egyenletes-, illetve gyorsuló mozgás paramétereinek vizsgálata (optikai érzékelő a szenzorcsomagban)</li>
+        <li>Hangsebesség mérése mikrofonnal (myDAQ-hoz csatlakoztatható mikrofon a szenzorcsomagban)</li>
+        <li>Különféle színű tárgyak válogatása reflexiós optikai érzékelővel (érzékelő a szenzorcsomagban)</li>
+        <li>Savas, lúgos kémhatású oldatok vizsgálata indikátorfolyadékkal, optikai érzékelővel</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>A PC részei, PC szét- és összeszerelése, bővítése</h3>
+      <p>A témakörben a tanulók áttekintik a számítógépek és mobileszközök, főbb perifériák és adathordozók felépítését. A témakör elsajátítása után a tanuló:</p>
+      <ul>
+        <li>Ismeri a számítógép általános felépítését, a számítógépházak, tápegységek, alaplapok, processzortípusok, foglalatok jellemzőit, tulajdonságait.</li>
+        <li>Ismeri a CPU-típusokat (RISC, CISC), a tokozási módokat, a processzor hűtési módszerét.</li>
+        <li>Ismeri a memóriák fő típusait (RAM, ROM) és altípusaikat. Képes felismerni a különböző memóriamodulokat (DIP, SIMM, DIMM, SODIMM).</li>
+        <li>Fel tudja sorolni a fontosabb illesztőkártya-típusokat (hálózati, audio, video stb.) és alaplapi csatlakozási felületeiket (PCI, AGP stb.).</li>
+        <li>Ismeri a háttértárak típusait, a merevlemezek és SSD-k csatolófelületeit; a mágneses és félvezető elven működő tárolókat; a redundáns adattárolás fogalmát, képes a fontosabb RAID-verziók működésének megértésére.</li>
+        <li>Fel tudja sorolni az optikai meghajtók típusait és azok fontosabb jellemzőit.</li>
+        <li>Képes felismerni a portok és csatlakozók típusait és csatlakoztatni a megfelelő eszközöket, meg tudja különböztetni a belső és külső kábeltípusokat.</li>
+        <li>Tudja a BIOS és az UEFI feladatát, képes azok beállítására és jelszóval való védelmére.</li>
+        <li>Képes a gép firmware-ének frissítésére.</li>
+        <li>Képes a speciális célú számítógépes rendszerek (CAD/CAM, virtualizáció, játék, HTPC) jellemzőinek felsorolására, ezek alapján az adott célra megfelelő hardver kiválasztására.</li>
+        <li>Ismeri a vastag- és vékonykliensek közti különbségeket, valamint a hálózati adattároló eszközök (NAS-ok) célját.</li>
+        <li>Képes a számítógép szakszerű szétszerelésére, az ehhez szükséges szerszámok kiválasztására és használatára.</li>
+        <li>Képes a pontos számítógép-konfiguráció meghatározására, a megfelelő alkatrészek kiválasztására.</li>
+        <li>Ismeri a számítógép szakszerű összeszerelésének folyamatát, és el is tudja végezni azt.</li>
+        <li>Képes memória és tárhely bővítésére asztali számítógépben és laptopban.</li>
+        <li>Tudja, hogyan lehet számítógép-alkatrészeket cserélni, frissíteni a hardverkomponenseket.</li>
+        <li>Ismeri a szünetmentes tápegységek (UPS) célját, típusait, és képes UPS üzembe helyezésére.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Megelőző karbantartás és hibakeresés</h3>
+      <p>A témakörben a tanulók a hardveres és szoftveres karbantartásról, illetve az alapvető hibaelhárításról tanulnak, és megismerkednek a legfontosabb munka- és környezetvédelmi ismeretekkel. A témakör elsajátítását követően a tanuló:</p>
+      <ul>
+        <li>Tisztában van a megelőző karbantartás céljával, jelentőségével.</li>
+        <li>Képes alkatrészek, perifériák szakszerű tisztítására, pormentesítésére a megfelelő eszközökkel.</li>
+        <li>Ismeri a számítógépek működésének környezeti feltételeit, a hőmérséklet és a páratartalom hatását a számítógép működésére.</li>
+        <li>Képes szoftveres karbantartási feladatok elvégzésére: az operációs rendszer frissítésére, víruskereső adatbázisának naprakészen tartására, nem használt alkalmazások törlésére, lemezek hibaellenőrzésére.</li>
+        <li>Ismeri és alkalmazza a hibakeresési folyamat lépéseit, képes a kézenfekvő problémák kiszűrésére.</li>
+        <li>Képes speciális karbantartásra és hibakeresésre mobileszközöknél és nyomtatóknál</li>
+        <li>Ismeri és alkalmazza az általános munkabiztonsági előírásokat, szabályokat.</li>
+        <li>Tisztában van a számítógépek és nyomtatók szerelésének érintésvédelmi irányelveivel.</li>
+        <li>Ismeri a tűzvédelmi irányelveket, képes elektromos tüzek oltására.</li>
+        <li>Tisztában van az elektrosztatikus kisülés (ESD) veszélyeivel, a védekezés lehetőségeivel.</li>
+        <li>Ismeri a tápfeszültség anomáliáit és veszélyeit, képes túlfeszültség-védelmi eszközök használatára.</li>
+        <li>Ismeri a számítógép-részegységek biztonságos megsemmisítésének célját és módozatait, valamint a lehetséges újrahasznosítási lehetőségeket.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Laptopok és más eszközök tulajdonságai, hibakeresés</h3>
+      <p>A témakörben a tanulók a laptopok és más mobileszközök (pl. okostelefonok) jellemzőivel, felépítésével, alapszintű beállításaival és hibaelhárításával kapcsolatos ismereteket sajátítanak el. A témakör elsajátítását követően a tanuló:</p>
+      <ul>
+        <li>Ismeri a hordozható eszközök típusait (laptop, okostelefon, tablet, e-book-olvasó stb.).</li>
+        <li>Fel tudja sorolni a laptopok összetevőit, megjelenítőeszközeit és hogy miben különböznek az asztali gépekétől.</li>
+        <li>Ismeri a laptopon található bővítőhelyeket, képes memóriabővítés elvégzésére.</li>
+        <li>Képes a laptopok felhasználó, illetve szerviz által cserélhető alkatrészeinek megkülönböztetésére.</li>
+        <li>Ismeri a dokkolóállomás és a portismétlő funkciót, képes csatlakoztatni és használni azokat.</li>
+        <li>Ismeri az energiagazdálkodási beállítások célját és képes azok konfigurálására.</li>
+        <li>Tudja, milyen vezeték nélküli csatlakozási módok léteznek, és képes használni azokat.</li>
+        <li>Meg tudja különböztetni az okostelefonok részegységeit, azok vezetékes és vezeték nélküli hálózati csatlakozási lehetőségeit.</li>
+        <li>Fel tudja sorolni az ismertebb viselhető és egyéb okoseszközöket, valamint azok jellemzőit.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Nyomtatók és egyéb perifériák</h3>
+      <p>A témakörben a tanulók a nyomtatók típusaival, jellemzőivel, telepítésével és beállításaival ismerkednek meg, és képet alkotnak a további ki- és beviteli perifériákról is. A témakör elsajátítását követően a tanuló:</p>
+      <ul>
+        <li>Fel tudja sorolni a hagyományos és a modern beviteli eszközöket, és képes azok használatára.</li>
+        <li>Ismeri a nyomtatók típusait, működési elvét, és össze tudja hasonlítani azokat.</li>
+        <li>Képes lapolvasásra és nyomtatásra multifunkciós nyomtatókkal.</li>
+        <li>Képes nyomtatókat és lapolvasókat telepíteni, beállítani és hálózaton megosztani.</li>
+        <li>Ismeri a nyomtatószerverek alkalmazási lehetőségeit, és használni is tudja azokat.</li>
+        <li>Képes a nyomtatók teljesítményének javítására szoftveres beállításokkal, valamint memóriabővítéssel.</li>
+        <li>Ismeri a virtuális nyomtatókat és képes azok használatára, valamint ismeri a 3D nyomtatók működési elvét.</li>
+        <li>Fel tudja sorolni a szkennerek típusait, tisztában van a működési elvükkel, és képes dokumentumok beolvasására.</li>
+        <li>Ismeri a megjelenítők típusait, paramétereit és alapvető működési elvét.</li>
+        <li>Ismeri a virtuális valóság (VR és AR) megjelenítőeszközeit.</li>
+        <li>Ismeri a hangeszközök beállításait, a hangszórók csatlakoztatási módját.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Virtualizáció és felhőtechnológiák</h3>
+      <p>A témakör feladata, hogy megismertesse a tanulókat a virtualizáció céljával és megvalósítási módjaival, valamint a felhőtechnológiákkal (cloud computing). A témakör elsajátítását követően a tanuló:</p>
+      <ul>
+        <li>Ismeri a virtualizáció célját, fel tudja sorolni előnyeit a dedikált szerveres telepítési móddal szemben.</li>
+        <li>Tudja, mi a különbség a szerver- és kliensoldali virtualizáció között.</li>
+        <li>Ismeri a hypervisor jelentését, meg tudja különböztetni az 1-es és 2-es típusú hypervisort, és tud példákat mondani rájuk.</li>
+        <li>Tudja, milyen erőforrásigényt jelent a virtualizáció megvalósítása.</li>
+        <li>Képes virtuális gép telepítésére valamilyen elterjedt virtualizációs programban (pl. Virtualbox, VMWare): be tudja állítani a virtuális hardver paramétereit, és képes image-fájlból operációs rendszert telepíteni.</li>
+        <li>Ismeri a konténer fogalmát, tudja, hogy miben különbözik a virtuális gépektől, képes konténert indítani és leállítani valamilyen elterjedt módszer (pl. Docker) segítségével.</li>
+        <li>Ismeri a számítási felhő (cloud computing) fogalmát, és tudja, hogy mire használható.</li>
+        <li>Fel tudja sorolni a gyakoribb felhőszolgáltatások (SaaS, PaaS, IaaS) jellemzőit, tud rájuk példát mondani, és használni is képes azokat (pl. Office 365, Gmail, Google Drive, Dropbox, OneDrive stb.).</li>
+        <li>Ismeri a felhőmodelleket (privát, publikus, hibrid), azok jellemzőit, és konkrét példákat tud mondani a használatukra.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Windows telepítése és konfigurációja</h3>
+      <p>A témakör célja, hogy a tanulók megismerkedjenek a Windows operációs rendszer jellemzőivel, telepítési módozataival, valamint a napi használathoz szükséges konfigurálásával. A témakör elsajátítását követően a tanuló:</p>
+      <ul>
+        <li>Ismeri az operációs rendszer fogalmát, fel tudja sorolni annak feladatait.</li>
+        <li>Tudja, milyen típusú operációs rendszerek léteznek, ismeri a GPL, multiuser, multitask fogalmát.</li>
+        <li>Tudja, mi a különbség a GUI és CLI felhasználói felületek között, és képes azok használatára.</li>
+        <li>Tudja, milyen szempontok alapján lehet kiválasztani adott célnak megfelelő operációs rendszert.</li>
+        <li>Ismeri a partíció fogalmát, típusait, tud adott séma alapján merevlemezt particionálni.</li>
+        <li>Ismeri a fontosabb fájlrendszerek (FAT, NTFS, ext2/3/4) tulajdonságait, esetleges korlátait, és képes adott fájlrendszert létrehozni a lemezen.</li>
+        <li>Képes az operációs rendszerek hardverkövetelményeinek meghatározására.</li>
+        <li>Képes az operációs rendszer hardverkompatibilitásának ellenőrzésére.</li>
+        <li>Képes telepíteni a Windows operációs rendszert telepítőmédiumról (DVD, pendrive).</li>
+        <li>Képes meghajtóprogramokat telepíteni adott hardvereszközhöz, képes azokat frissíteni, esetlegesen letiltani.</li>
+        <li>Képes frissítések és hibajavító csomagok telepítésére az operációs rendszerhez, tudja kezelni a Windows Update-et.</li>
+        <li>Képes az operációs rendszer verziófrissítésére (upgrade), a felhasználói adatok más gépre való költöztetésére.</li>
+        <li>Ismeri a Windows lemezkezelési lehetőségeit, a lemezkezelő alkalmazást, illetve a lemezkarbantartási műveleteket (töredezettségmentesítés, hibaellenőrzés).</li>
+        <li>Képes multiboot rendszerek beállítására többféle operációs rendszer indításához ugyanazon a gépen.</li>
+        <li>Ismeri a Windows speciális telepítési módjait, pl. unattended mód</li>
+        <li>Ismeri a lemezklónozás célját, képes kezelni valamilyen klónozó programot (pl. Clonezilla).</li>
+        <li>Ismeri a Windows betöltési folyamatát, képes váltani a betöltési módok között rendszerindításkor.</li>
+        <li>Képes alkalmazások és folyamatok indítására, leállítására, adataik lekérdezésére a Feladatkezelő használatával.</li>
+        <li>Képes alkalmazások, programok telepítésére és eltávolítására.</li>
+        <li>Ismeri a fájlkezelési műveleteket az Intéző segítségével, illetve parancssorból.</li>
+        <li>Képes konfigurálási műveletek elvégzésére a Vezérlőpultban és a Gépházban található beállítások segítségével.</li>
+        <li>Képes felhasználói fiókokat hozzáadni, törölni, típusukat megváltoztatni és beállítani a jelszavakat.</li>
+        <li>Képes illesztőprogramok frissítésére az Eszközkezelő használatával.</li>
+        <li>Képes konfigurálni a területi és nyelvi beállításokat.</li>
+        <li>Képes az Eseménynapló segítségével adatokat keresni eseményekről, és képes felhasználni ezeket hibakereséshez.</li>
+        <li>Tudja monitorozni a rendszer erőforrásait, képes szolgáltatások indítására és leállítására.</li>
+        <li>Ismeri a regisztrációs adatbázis célját, és képes abban beállításokat végezni a Regedit programmal.</li>
+        <li>Felismeri a CLI jelentőségét, és képes parancssori eszközöket használni a gyakoribb feladatokra (fájlműveletek, hálózatkezelés, felhasználókezelés stb.).</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>A dolgok internete</h3>
+      <p>A témakör célja az IoT (dolgok internete) fogalmának és gyakorlati megvalósítási lehetőségeinek bemutatása. A témakör elsajátítását követően a tanuló:</p>
+      <ul>
+        <li>Ismeri az IoT fogalmát, alkalmazási lehetőségeit, a szenzorok, mikrokontrollerek és beavatkozóelemek különböző típusait.</li>
+        <li>Képes prototípus készítésére a megvalósítandó IoT-projekthez.</li>
+        <li>Ismeri a Big Data és az automatizáció fogalmát.</li>
+        <li>Képes egyszerű IoT-projektek szimulációjára (Packet Tracerben) és megvalósítására valós eszközökkel (Arduino, Raspberry Pi).</li>
+      </ul>
+    </article>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="lapok.css">
+  <title>Hálózatok I.</title>
+</head>
+<body>
+    <h1>Hálózatok I.</h1>
+
+    <article>
+        <h3>Hálózati eszközök alapszintű konfigurációja</h3>
+        <p>A témakör célja, hogy a tanulók képesek legyenek hálózati eszközökkel sávon kívüli és sávon belüli kapcsolatot létesíteni, és kapcsolók, illetve forgalomirányítók alapszintű konfigurációját elvégezni.</p>
+        <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+        <ul>
+          <li>Képes konzolkapcsolatot kialakítani számítógép és hálózati eszköz (kapcsoló, forgalomirányító) között. Ismer legalább egy terminálemulációs szoftvert, és képes annak használatával a hálózati eszköz konfigurációs felületéhez hozzáférni.</li>
+          <li>Tisztában van a kapcsoló kezdeti konfigurációját megvalósító parancsokkal, és képes ezen parancsok használatára. Képes a kapcsoló alapszintű konfigurációját elvégezni (eszköznév beállítása, privilegizált mód és vonali jelszavak beállítása, bejelentkezési és nap üzenetének beállítása, parancselőzmények számának korlátozása).</li>
+          <li>Képes kapcsolón felügyeleti IP-cím és alapértelmezett átjáró beállítására.</li>
+          <li>Képes kapcsolón telnet és SSH-kapcsolat konfigurálására. Tisztában van a telnet és az SSH-protokollok közötti különbséggel. Adatforgalom elfogására alkalmas szoftver használatával képes telnet forgalom elfogására és az elfogott csomagok elemzésére.</li>
+          <li>Tisztában van a forgalomirányító kezdeti konfigurációját megvalósító parancsokkal, és képes ezen parancsok használatára.</li>
+          <li>Képes forgalomirányító interfészeinek konfigurálására (IP-cím és alhálózati maszk beállítása, leírás megadása, interfész engedélyezése és tiltása).</li>
+          <li>Képes forgalomirányító tábla megjelenítésére, és tudja értelmezni a közvetlenül csatlakozó hálózatokat jelölő sorokat.</li>
+          <li>Képes végberendezéseket csatlakoztatni a hálózati eszközökhöz, és képes azok IP-konfigurációját elvégezni.</li>
+          <li>Képes ellenőrizni a közvetlenül csatlakozó hálózatok elérhetőségét.</li>
+          <li>Képes hibaelhárítást végezni nem megfelelően működő, közvetlenül csatlakozó hálózatok között. Észreveszi a hálózatelérési hibát okozó téves konfigurációt, és képes annak korrigálására.</li>
+        </ul>
+    </article>
+
+    <article>
+      <h3>Kapcsolási alapok (switching)</h3>
+      <p>A témakör célja, hogy a tanulók megismerjék a kapcsoló működését, a kapcsolási módokat.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a második rétegbeli kerettovábbítás folyamatával. Tudja, hogy a kapcsoló esetében mire szolgál a MAC-tábla. Ismeri a MAC-tábla felépítésének folyamatát, és használatának módját. Képes a kapcsoló MAC-tábláját megjeleníteni, kiüríteni.</li>
+        <li>Adatforgalom elfogására alkalmas szoftver vagy szimulációs szoftver használatával képes a kapcsoló MAC-táblájának felépítését nyomon követni.</li>
+        <li>Ismeri a kapcsolási módokat (töredékmentes továbbítás, gyorstovábbítás, tárol-és-továbbít módszer), és képes azok összehasonlítására.</li>
+        <li>Tisztában van az ütközési tartomány és a szórási tartomány fogalmával. Képes az ütközési és a szórási tartomány összehasonlítására és megkülönböztetésére. Adott topológián képes az ütközési és a szórási tartományok megállapítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>VLAN-ok használata, VLAN-ok közti forgalomirányítás</h3>
+      <p>A témakör célja, hogy a tanulók ismerjék meg a VLAN-ok szerepét, legyenek képesek VLAN-ok kialakítására, és legyenek tisztában a trönk kapcsolatok szerepével. A tanulók ismerkedjenek meg a VLAN-ok közti forgalomirányítás lehetőségeivel, és legyenek képesek VLAN-ok közti forgalomirányítást megvalósítani.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni.</p>
+      <ul>
+        <li>Tisztában van a VLAN-ok szerepével, jelentőségével. Érti a VLAN-ok használatának célját.</li>
+        <li>Ismeri a VLAN-ok fontosabb típusait: adat, hang, felügyeleti és natív VLAN, és tisztában van a VLAN-ok megvalósításának módjaival.</li>
+        <li>Tisztában van a VLAN ID fogalmával, szerepével. Ismeri a normál és kiterjesztett VLAN létrehozására használható VLAN ID-tartományt. Érti a normál és a kiterjesztett VLAN közötti különbségeket.</li>
+        <li>Képes VLAN-ok létrehozására, törlésére, módosítására.</li>
+        <li>Tisztában van a kapcsoló portjainak lehetséges működési módjaival (hozzáférési, trönk), érti a két működési mód közötti különbséget. Adott topológián önállóan meg tudja határozni, hogy a szereplő kapcsolóportoknak melyik módban kellene működniük.</li>
+        <li>Képes a kapcsoló portjait hozzáférési módúra konfigurálni és VLAN-hoz rendelni.</li>
+        <li>Képes a kapcsoló portjait trönk módúra konfigurálni, azon a natív és az átengedett VLAN-okat beállítani.</li>
+        <li>Ismeri a 802.1q protokollt, és adatforgalom elfogására alkalmas szoftverrel vagy szimulációs szoftverrel képes 802.1q keret elemzésére.</li>
+        <li>Képes egy adott kapcsolón a hozzáférési portként működő portok és a hozzájuk rendelt VLAN-ok megjelenítésére. Képes egy kapcsolón a trönkként működő portok megjelenítésére. Képes arra, hogy egy kapcsoló portján ellenőrizze a működési módot (hozzáférési, trönk).</li>
+        <li>Képes a hozzáférési és a trönk portok hibaelhárítására.</li>
+        <li>Ismeri a VTP-protokollt, tisztában van a VTP-protokoll használatával. Érti a VTP-módok (kliens, szerver, transzparens) feladatát, működését.</li>
+        <li>Képes VTP-t konfigurálni kapcsolók közé.</li>
+        <li>Képes a VTP-protokoll hibafelderítésére és elhárítására.</li>
+        <li>Képes többkapcsolós hálózatban VLAN-ok kialakítására.</li>
+        <li>Képes VLAN-ok között hagyományos forgalomirányítás megvalósítására.</li>
+        <li>Képes VLAN-ok között "router-on-a-stick" forgalomirányítás megvalósítására.</li>
+        <li>Képes többrétegű kapcsolón routed port konfigurálására. Képes VLAN-ok közötti hagyományos forgalomirányítás megvalósítására többrétegű kapcsolóval.</li>
+        <li>Képes többrétegű kapcsolón VLAN-ok létrehozására, SVI-interfészeken IP-cím beállítására, fizikai porton trönk működési mód beállítására. Képes többrétegű kapcsolón trönk port és SVI-interfészek használatával VLAN-ok közti forgalomirányítás konfigurálására.</li>
+        <li>Képes VLAN-ok közötti forgalomirányítás hibakeresésére és -elhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Második rétegbeli redundancia</h3>
+      <p>A témakör célja, hogy a tanulók felismerjék az első és második rétegben a redundancia szükségességét, és tisztában legyenek a redundancia okozta problémákkal. Ismerjék meg a feszítőfa-protokoll szerepét, és legyenek képesek feszítőfa-protokoll használatára, konfigurálására. A tanulók értsék meg a portösszevonás működését, és legyenek képesek kapcsolók közötti portösszevonás konfigurálására, hibaelhárítására.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van az első és második rétegbeli LAN-redundancia szerepével, szükségességével.</li>
+        <li>Érti a redundánsan kialakított hálózatok esetén felmerülő problémákat (szórási vihar, MAC-tábla-instabilitás, többszörös kerettovábbítás).</li>
+        <li>Képes a redundánsan kialakított hálózat problémáit szimulációs szoftver segítségével bemutatni, modellezni.</li>
+        <li>Ismeri a feszítőfa-protokollt, tisztában van annak szerepével, feladatával.</li>
+        <li>Ismeri a feszítőfa-protokoll működését, tudja az idekapcsolódó fogalmakat (gyökérponti híd, Bridge ID, BPDU, gyökérponti port, kijelölt port, nem kijelölt port).</li>
+        <li>Ismeri a Bridge ID tartalmát, felépítését.</li>
+        <li>Tisztában van a gyökérponti híd választásának folyamatával, és képes azt befolyásolni prioritás használatával.</li>
+        <li>Ismeri a feszítőfa-protokoll által használt vonali költségeket. Képes egy topológián megállapítani, hogy melyik kapcsoló tölti be a gyökérponti híd szerepét, a többi kapcsoló esetén képes a gyökérponti hídtól való költség megállapítására. Képes eldönteni, hogy melyik port milyen szerepet tölt be (gyökérponti, kijelölt, nem kijelölt).</li>
+        <li>Képes megjeleníteni egy kapcsolón a jelenleg használt feszítőfa-protokollt, a györkérponti híd és a saját Bridge ID-t, a gyökérponti hídtól vett költséget és a feszítőfa-protokollban részt vevő portok szerepét és költségét.</li>
+        <li>Tudja, hogy egy port felkapcsolása esetén milyen állapotváltozások (lezárt, figyelő, tanuló, továbbító, letiltott) mennek végbe, és képes ezeket jellemezni.</li>
+        <li>Ismeri a feszítőfa-protokoll változatait (STP, RSTP, PVST+, rapid PVST+, MSTP), érti a működésbeli eltéréseket.</li>
+        <li>Tisztában van a portfast, a BPDU-filter és a BPDU-guard szerepével, és képes ezeket beállítani globálisan és portonként is.</li>
+        <li>Képes a feszítőfa-protokoll hibakeresésére és hibaelhárítására.</li>
+        <li>Tisztában van a második rétegbeli portösszevonás szükségességével, és ismeri annak lehetőségeit.</li>
+        <li>Ismeri a portösszevonás előnyeit, a feszítőfa- protokollra vonatkozó jelentőségét.</li>
+        <li>Tudja, mi szükséges ahhoz, hogy a portösszevonás működőképesen megvalósuljon.</li>
+        <li>Ismer legalább egy protokollt, amely portösszevonást valósít meg (LACP, PAgP), tisztában van ezen protokoll működésével és a használt portmódokkal (kezdeményező, várakozó).</li>
+        <li>Képes az általa ismert protokollal EtherChannel kapcsolat kialakítására.</li>
+        <li>Képes egy kapcsolón létrehozott EtherChannel kapcsolatok megjelenítésére, a beletartozó portok kilistázására.</li>
+        <li>Képes EtherChannel kapcsolatok hibakeresésére és hibaelhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Dinamikus címkiosztás IPv4-környezetben</h3>
+      <p>A témakör célja, hogy a tanulók megismerkedjenek a dinamikus címkiosztással IPv4-környezetben. A tanulók legyenek képesek DHCPv4-kiszolgáló konfigurálására forgalomirányítón.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Ismeri a dinamikus címigénylés lehetőségeit IPv4-környezetben.</li>
+        <li>Ismeri a DHCPv4-protokoll működését, az általa használt üzeneteket (DHCPDISCOVER, DHCPOFFER, DHCPREQUEST, DHCPACK, DHCPNAK). Képes a DHCP által használt üzenetek jellemzésére.</li>
+        <li>Adatforgalom elfogására használt szoftverrel vagy szimulációs szoftverrel képes a DHCP-folyamat üzeneteit megjeleníteni és azokat értelmezni. Képes a DHCP-folyamat végigkövetésére, adatforgalom elfogására alkalmas szoftver használatával.</li>
+        <li>Képes forgalomirányítón DHCP-szolgáltatás engedélyezésére és tiltására. Képes forgalomirányítón DHCP-hatókör konfigurálására, mely a legszükségesebb elemeket tartalmazza (kiosztható hálózat, alapértelmezett átjáró, DNS-kiszolgáló, kiosztásból kizárt címek).</li>
+        <li>Képes forgalomirányítón DHCP-fenntartás konfigurálására és a bérleti idő beállítására.</li>
+        <li>Képes forgalomirányítón DHCP-közvetítő használatára.</li>
+        <li>Képes végberendezéseken és hálózati eszközökön DHCP-protokoll használatával dinamikus címigénylés beállítására.</li>
+        <li>Képes DHCPv4 esetén hibafelderítést és hibaelhárítást végezni.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>IPv6-os címzés és dinamikus címkiosztás IPv6-környezetben</h3>
+      <p>A témakör célja, hogy a tanulók megismerjék az IPv6-cím szerepét, szerkezetét, tisztában legyenek használatának szükségességével. A tanulók ismerjék meg az IPv6-címek típusait, és legyenek képesek IPv6-os címzés használatára forgalomirányítókon és végberendezéseken. A tanulók értsék meg a címmeghatározó protokoll szerepét IPv6-környezetben. A tanulók ismerkedjenek meg a dinamikus címkiosztás lehetőségeivel IPv6-környezetben. A tanulók legyenek képesek SLAAC használatára és DHCPv6-kiszolgáló konfigurálására forgalomirányítón. A tanulók ismerjék fel a dinamikus címkiosztás során felmerülő tipikus hibákat, és legyenek képesek azok elhárítására.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van az IPv6-os címzés kialakulásának szükségességével és időszerűségével.</li>
+        <li>Ismeri az IPv6-csomag fejlécének fontosabb mezőit (forrás és cél IPv6-cím, ugráskorlát, következő fejléc).</li>
+        <li>Ismeri az IPv6-címek felépítését, szerkezetét, tisztában van a nibble, a prefix és a prefixhossz fogalmával.</li>
+        <li>Ismeri az IPv6-cím rövidítésének szabályait, és azokat a gyakorlatban is tudja alkalmazni.</li>
+        <li>Ismeri az IPv6-os címzés típusait (unicast, multicast, anycast).</li>
+        <li>Ismeri az IPv6 egyedi címek legfontosabb fajtáit (globális egyedi cím, link-local cím, visszacsatolási cím, meghatározatlan cím, egyedi helyi cím).</li>
+        <li>Tisztában van a globális egyedi cím szerkezetével (globális forgalomirányító előtag, alhálózat-azonosító, interfész-azonosító).</li>
+        <li>Ismeri az EUI-64 módszert, és tetszőleges MAC-cím esetén képes előállítani az interfészazonosítót EUI-64 használatával.</li>
+        <li>Képes hálózati eszközökön és végberendezéseken statikus IPv6-cím beállítására, link-local cím beállítására, használatára.</li>
+        <li>Képes IPv6-kapcsolat kialakítására és tesztelésére ping és traceroute parancsok használatával.</li>
+        <li>Ismeri az ICMPv6-protokoll működését és lehetséges üzeneteit.</li>
+        <li>Képes forgalomirányítón az IPv6-forgalomirányítás engedélyezésére.</li>
+        <li>Ismeri az IPv6-környezetben használt címmeghatározó protokollt (NDP), és annak üzeneteit (RA, RS, NA, NS). Tisztában van a címmeghatározó protokoll működésével és használatának szükségességével. Ismeri a címfeloldás és a duplikáltcím-felderítés menetét és a használt NDP-üzeneteket.</li>
+        <li>Képes IPv6-környezetben alhálózatok kialakítására, és képes megállapítani, hogy több IPv6-cm egy alhálózathoz tartozik-e.</li>
+        <li>Képes IPv6-környezetben címzési terv készítésére.</li>
+        <li>Képes IPv6-hálózat működésének ellenőrzésére és az alapvető hibák elhárítására.</li>
+        <li>Ismeri a dinamikus címkiosztás lehetőségeit IPv6-környezetben, és tisztában van a címigénylés folyamatával SLAAC, állapotmentes és állapottartó DHCPv6 esetén.</li>
+        <li>Ismeri az NDP protokoll üzeneteit (RA, RS, NA, NS), tisztában van azok jelentőségével a dinamikus címkiosztás vonatkozásában.</li>
+        <li>Ismeri a DHCPv6-folyamat legfontosabb üzeneteit (Solicit, Advertise, Request, Information-Request, Reply stb.), tisztában van azzal, hogy melyik üzenet mire szolgál.</li>
+        <li>Képes a dinamikus címigénylési folyamat üzeneteinek megtekintésére és elemzésére egy adatforgalom elfogására alkalmas szoftverrel. Tudja értelmezni az elfogott üzeneteket.</li>
+        <li>Képes forgalomirányítón dinamikus IPv6-címkiosztást konfigurálni SLAAC, állapotmentes és állapottartó DHCPv6 használatával.</li>
+        <li>Képes kliens eszközökön (végberendezés és forgalomirányító) dinamikus címigénylést használni IPv6-os környezetben.</li>
+        <li>Felismeri a leggyakoribb hibákat a dinamikus címkiosztás során IPv6-környezetben, és képes ezeknek a hibáknak az elhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Harmadik rétegbeli redundancia</h3>
+      <p>A témakör célja, hogy a tanulók felismerjék a harmadik rétegben a redundancia szükségességét, és tisztában legyenek a redundancia okozta problémákkal. A tanulók tudjanak harmadik rétegbeli redundanciát tervezni, és megvalósítani FHRP protokoll konfigurálásával.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van a harmadik rétegbeli redundancia szükségességével és megvalósításának lehetőségeivel.</li>
+        <li>Képes harmadik rétegbeli redundanciát tartalmazó hálózat tervezésére.</li>
+        <li>Ismeri a First Hop Redundancy Protocols (FHRP) általános működési elvét.</li>
+        <li>Érti a virtuális router, a virtuális IP-cím és a virtuális MAC-cím jelentőségét, megfelelően tudja használni a virtuális IP-címet.</li>
+        <li>Tisztában van legalább egy FHRP-protokoll működésével (Virtual Router Redundancy Protocol [VRRP], Hot Standby Router Protocol [HSRP], Gateway Load Balancing Protocol [GLBP]).</li>
+        <li>Képes az általa tanult FHRP-protokoll hatékony működésének konfigurálására.</li>
+        <li>Képes az általa tanult FHRP-protokoll beállításainak, valamint a forgalomirányító protokollbeli aktuális szerepének a megjelenítésére.</li>
+        <li>Felismeri az általa tanult FHRP-protokoll konfigurációs hibáit, és képes azok elhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Hálózatbiztonság, a kapcsoló biztonságossá tétele</h3>
+      <p>A témakör célja, hogy a tanulók megismerjék a leggyakoribb biztonsági problémákat és támadási típusokat LAN-környezetben, és megtanulják, hogyan lehet ellenük védekezni, illetve megelőzni őket.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Érti az alapvető biztonsági beállítások szükségességét a hálózati eszközökön.</li>
+        <li>Ismeri a LAN-okban előforduló leggyakoribb biztonsági problémákat, támadási lehetőségeket (MAC-cím-elárasztás, ARP-támadás, DHCP-kiéheztetés és -hamisítás, Telnet-támadások, Brute force-jelszó-támadás).</li>
+        <li>Tisztában van a leggyakrabban használt biztonsági módszerek szerepével, működési elvével.</li>
+        <li>Érti a MAC-cím-elárasztásos támadás folyamatát és az általa okozott működési problémákat.</li>
+        <li>Tisztában van a portbiztonság működésével, és használatának lehetőségeivel. Érti a portbiztonság megsértésével kiváltott állapotok közti különbségeket.</li>
+        <li>Képes kapcsolón portbiztonság konfigurálására.</li>
+        <li>Képes ellenőrizni a portbiztonsággal konfigurált kapcsolóportok állapotát, és képes a lekapcsolt portok helyreállítására.</li>
+        <li>Ismeri a DHCP-snooping-technikát, annak működését. Tisztában van a megbízható és nem megbízható port fogalmával.</li>
+        <li>Képes kapcsolón DHCP-snooping konfigurálására.</li>
+        <li>Tudja, mi célt szolgál a DHCP 82-es opciója, és képes ennek használatát engedélyezni, illetve tiltani.</li>
+        <li>Képes ARP-inspection (DAI)konfigurálásra az ARP-támadások megelőzésére.</li>
+        <li>Képes kapcsoló és forgalomirányító távoli elérését SSH-protokoll használatával biztosítani.</li>
+        <li>Képes az SSH-elérés során fellépő hibák felismerésére és elhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Vezeték nélküli technológiák</h3>
+      <p>A témakör célja, hogy a tanulók megismerjék a vezeték nélküli szabványokat, a WLAN topológiákat és a WLAN-ok működését. A tanulók legyenek képesek vezeték nélküli hálózat kialakítására kis- és nagyvállalati környezetben. A tanulók legyenek tisztában a leggyakoribb biztonsági problémákkal, támadási módszerekkel, és tanulják meg, hogyan lehet ellenük védekezni, azokat megelőzni.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Képes a vezetékes és vezeték nélküli hálózatok összehasonlítására, előnyeinek és hátrányainak megállapítására.</li>
+        <li>Ismeri a vezeték nélküli LAN (WLAN) szabványokat, technológiákat. Tisztában van azzal, hogy mely 802.11 szabványok kompatibilisek egymással.</li>
+        <li>Tisztában van a rádiófrekvencia és a frekvenciacsatorna fogalmával, a 802.11 szabványok által használt rádiófrekvencia-sávval és -csatornákkal.</li>
+        <li>Tudja, hogy milyen összetevők szükségesek vezeték nélküli hálózat kialakításához (vezeték nélküli hálózati kártya, vezeték nélküli hozzáférési pont, vezeték nélküli forgalomirányító), és tisztában van ezek feladatával.</li>
+        <li>Ismeri a vezeték nélküli hálózatok esetén használatos topológiákat (ad hoc mód, infrastruktúra mód).</li>
+        <li>Ismeri a vezeték nélküli hálózat működései elvét, tisztában van a CSMA/CA közeghozzáférés-vezérléssel.</li>
+        <li>Ismeri a legfontosabb menedzsmentkeretek és vezérlőkeretek feladatát (beacon frame, association request frame, authentication frame, RTS, CTS).</li>
+        <li>Tisztában van a vezeték nélküli kliens és az AP társítási folyamatának lépéseivel.</li>
+        <li>Képes otthoni, vezeték nélküli hálózat kialakítására, konfigurálására. Képes vezeték nélküli kliens eszközökkel vezeték nélküli hálózathoz csatlakozni.</li>
+        <li>Ismeri a leggyakoribb vezeték nélküli támadási módokat (DOS-támadások, hamis AP-k, közbeékelődéses támadás).</li>
+        <li>Ismeri a vezeték nélküli hitelesítési módokat, és képes azok konfigurálására, használatára.</li>
+        <li>Képes vezeték nélküli forgalomirányító konfigurálására (például: DHCP-kiszolgáló, SSID, hitelesítés, MAC-cím-szűrés, porttovábbítás, távoli felügyelet, adminisztrátori jelszó).</li>
+        <li>Képes vezeték nélküli forgalomirányítót az internethez csatlakoztatni, megfelelő IP-címzést konfigurálni.</li>
+        <li>Ismeri a nagyvállalati, vezeték nélküli hálózati megoldások során használt eszközöket (Wireless LAN Controller, Lightweight Access Point).</li>
+        <li>Tisztában van a CAPWAP-protokoll működésével.</li>
+        <li>Képes WLC-hez csatlakozni és annak GUI-felületét használni. Képes WLC-n a legalapvetőbb beállítások elvégzésére (WLAN létrehozása, beállításai, AP-csoportok kezelése).</li>
+        <li>Képes a vezeték nélküli hálózatokban előforduló leggyakoribb hibák felismerésére és elhárítására.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Forgalomirányítási alapok, statikus forgalomirányítás</h3>
+      <p>A témakör célja, hogy a tanulók szerezzenek forgalomirányítási alapismereteket, tudják értelmezni az irányítótábla bejegyzéseit IPv4- és IPv6-környezetben. A tanulók ismerjék meg a statikus forgalomirányítás lehetőségeit, működését, és legyenek képesek kisebb hálózatban statikus forgalomirányítást konfigurálni.</p>
+      <p>A témakör elvégzését követően a tanuló az alábbi ismeretekkel és gyakorlati készségekkel fog rendelkezni:</p>
+      <ul>
+        <li>Tisztában van az irányítótábla szerepével, az irányítótáblában található sorok felépítésével IPv4- és IPv6-környezetben.</li>
+        <li>Képes a forgalomirányító IPv4- és IPv6-irányítótábláját megjeleníteni, a benne található sorokat értelmezni.</li>
+        <li>Képes IPv4- és IPv6-irányítótábla alapján a forgalomirányító döntési folyamatát ismertetni.</li>
+        <li>Tisztában van a statikus forgalomirányítás szerepével, megvalósításának lehetőségével.</li>
+        <li>Ismeri a statikus forgalomirányítás előnyeit és hátrányait.</li>
+        <li>Ismeri a statikus útvonalak megadási módjait (teljesen meghatározott, kimenő interfészt használó, következő ugrás címét használó útvonalak).</li>
+        <li>Ismeri a statikusan létrehozott útvonalak fajtáit, és tisztában van ezek szerepével (alapértelmezett statikus útvonal, lebegő statikus útvonal, hagyományos statikus útvonal, összevont statikus útvonal).</li>
+        <li>Képes kis méretű hierarchikus hálózatban hatékony IPv4 és IPv6 statikus forgalomirányítást tervezni, megvalósítani.</li>
+        <li>Képes IPv4 és IPv6 alapértelmezett statikus útvonalat konfigurálni.</li>
+        <li>Képes hagyományos és lebegő statikus útvonalakat létrehozni IPv4 és IPv6 környezetben. Ismeri a lebegő statikus útvonal szerepét, tisztában van annak használatával.</li>
+        <li>Képes IPv4-és IPv6-környezetben útvonalösszevonást meghatározni, és ennek megfelelően összevont statikus útvonalat konfigurálni.</li>
+      </ul>
+    </article>
+</body>
+</html>
